@@ -14,6 +14,18 @@ A **Faster**, **Stronger** and **Lighter** framework for semantic segmentation, 
 }
 ```
 Contact: Hui-Kai Wu (huikaiwu@icloud.com)
+## Modify for Face Occlusion
+**2020-10-19: Test inference for single image**
+```bash
+python -m experiments.segmentation.test_single_image --dataset ade20k --model encnet --jpu JPU --backbone resnet50 --resume encnet_jpu_res50_ade20k_train.pth.tar --input-path /home/dl/FastFCN/images/img_ADE_val_00001086.jpg --save-path res.png
+```
+**2020-10-20: Train for CelebA-HQ dataset**
+
+`Ongoing...`
+1. Analyze dataset ade20k metadata label structure
+2. Diff with CelebA-HQ
+3. Parse CelebA-HQ and train
+
 
 ## Update
 **2020-04-15: Now support inference on a single image !!!**

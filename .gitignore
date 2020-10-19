@@ -10,3 +10,4 @@ build/
 results/
 
 .idea
+encnet_jpu_res50_ade20k_train.pth.tar
